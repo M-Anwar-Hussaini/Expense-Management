@@ -61,3 +61,5 @@ group :development do
 end
 
 gem 'devise', '~> 4.9'
+
+gem "rspec-rails", "~> 6.1"
