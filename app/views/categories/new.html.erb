@@ -1,6 +1,5 @@
+<%= render 'layouts/header', msg: 'Add New Category', btn: 'Home' %>
 <div class="form">
-  <h1>Add a new thing</h1>
-
   <%= form_with(model: @category, url: user_categories_path(current_user), method: :post) do |form| %>
     <div class="my-3">
       <%= form.label :name %>

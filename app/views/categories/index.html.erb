@@ -1,4 +1,4 @@
-<h1>List of all categories</h1>
+<%= render 'layouts/header', msg: 'List of all categories', btn: 'Home' %>
 <% if @categories.empty? %>
   <%= render 'layouts/alert', msg: 'There is not any category yet.', class_name: 'primary' %>
 <% end %>
@@ -17,10 +17,11 @@
           <% item.icon %>" class="img-thumbnail rounded-circle">
         </div>
         <div class="col-6">
-          <h3 class="mb-4"><%= item.name %></h3>
+          <h3 class="mb-4">
+            <%= link_to item.name, user_category_path(current_user, item), class: 'link-dark text-decoration-none' %></h3>
           <span class="text-muted"><%= item.created_at %></span>
         </div>
-        <div class="col-3 text-center">$<strong><%=item.total_price %></strong></div>
+        <div class="col-3 text-center">$<strong><%= item.total_price %></strong></div>
       </div>
     </li>
   <% end %>

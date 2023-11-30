@@ -19,7 +19,7 @@ class ExpensesController < ApplicationController
       end
 
     else
-      # render :new, notice: 'There is some problem.'
+      render :new
     end
   end
 
