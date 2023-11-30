@@ -1,0 +1,18 @@
+<%= form_with(model: @expense, url: user_expenses_path(current_user), method: :post) do |form| %>
+  <h2>Add New Expense</h2>
+  <div class="my-3">
+    <%= form.label :name, 'What for' %>
+    <%= form.text_field :name, class: 'form-control' %>
+  </div>
+  <div class="my-3">
+    <%= form.label :amount %>
+    <%= form.number_field :amount, class: 'form-control' %>
+  </div>
+  <div class="my-3">
+    <%= form.label :category, 'Category(Select one option)' %>
+    <%= form.select :category, Category.all.map { |c| [c.name, c.id] }, {}, { class: 'form-control' } %>
+  </div>
+  <div class="my-3">
+    <%=form.submit class: 'btn btn-success w-100' %>
+  </div>
+<% end %>

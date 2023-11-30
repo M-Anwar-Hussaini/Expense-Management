@@ -5,8 +5,8 @@ class Category < ApplicationRecord
   def total_price
     ce = category_expenses.where(self == :category)
     total = 0
-    ce.each do |expense|
-      total += expense.amount
+    ce.each do |record|
+      total += Expense.find(record.expense_id).amount
     end
     total.to_f
   end
