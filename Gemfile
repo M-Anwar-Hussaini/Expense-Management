@@ -64,3 +64,5 @@ group :development do
 end
 
 gem 'devise', '~> 4.9'
+
+gem "warden", "~> 1.2"
