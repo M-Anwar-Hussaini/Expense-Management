@@ -13,7 +13,7 @@ RSpec.describe Category, type: :model do
     let!(:category) do
       Category.create(
         name: 'Groceries',
-        user: user
+        user:
       )
     end
 

@@ -3,7 +3,6 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-
   describe 'instances' do
     let!(:user) do
       User.create(
