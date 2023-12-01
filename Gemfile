@@ -48,9 +48,9 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'capybara'
   gem 'debug', platforms: %i[mri windows]
-  gem 'factory_bot_rails'
   gem 'rails-controller-testing'
-  gem 'rspec-rails', '~> 6.1'
+  gem 'rspec-rails', '~> 6.0', '>= 6.0.3'
+  gem 'rubocop'
 end
 
 group :development do
@@ -65,5 +65,3 @@ group :development do
 end
 
 gem 'devise', '~> 4.9'
-
-gem 'warden', '~> 1.2'
