@@ -115,7 +115,7 @@ rails server
 Open your web browser and go to http://localhost:3000 to access the Blog App.
 
 ## 🏃‍♂️ Live Demo <a name="live-demo"></a>
-- [Here](https://expense-manager-9ik5.onrender.com/) is the live demo and this is a short [video](https://drive.google.com/file/d/1q56FoJDQ0UZQgY6_VD4fN9rCMp4nxXuD/view?usp=sharing) documentation.
+- [Here](https://expense-manager-9ik5.onrender.com/) is the live demo and this is a short [video](https://drive.google.com/file/d/1ujLjxFWZZYfPt6XQlL1IfJm92uLCUPu7/view?usp=sharing) documentation.
 
 ## 👥 Authors <a name="authors"></a>
 
