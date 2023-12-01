@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  # GET /categories or /categories.json
+  before_action :authenticate_user!
   def index
     @categories = current_user.categories.order(created_at: :desc)
   end

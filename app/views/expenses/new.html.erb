@@ -12,7 +12,7 @@
     <%= form.label :category, 'Category(Select one option)' %>
     <%= form.select :category, Category.all.map { |c| [c.name, c.id] }, {}, { class: 'form-control' } %>
   </div>
-  <div class="my-3">
-    <%= form.submit class: 'btn btn-success w-100' %>
+  <div class="btn-container">
+    <%= form.submit class: 'custom-btn' %>
   </div>
 <% end %>

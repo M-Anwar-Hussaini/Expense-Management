@@ -4,8 +4,6 @@ class ExpensesController < ApplicationController
     @category_expense = CategoryExpense.new
   end
 
-  def index; end
-
   def create
     @expense = Expense.new(expense_params)
     @expense.user = current_user
@@ -22,8 +20,6 @@ class ExpensesController < ApplicationController
       render :new
     end
   end
-
-  def show; end
 
   private
 

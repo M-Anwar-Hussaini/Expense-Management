@@ -7,3 +7,19 @@
   width: 100px;
   height: 100px;
 }
+
+.btn-container {
+  background-color: #5fb523;
+  padding: 10px;
+  text-align: center;
+}
+
+.custom-btn {
+  background-color: #5fb523;
+  color: #fff;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  border: 1px solid #fff;
+  padding: 12px;
+}
