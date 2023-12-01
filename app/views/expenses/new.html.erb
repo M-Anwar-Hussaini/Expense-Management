@@ -1,4 +1,4 @@
-<%= render 'layouts/header', msg: 'Add New Expense', btn: 'Home' %>
+<%= render 'layouts/header', msg: 'Add New Expense', btn: '<' %>
 <%= form_with(model: @expense, url: user_expenses_path(current_user), method: :post) do |form| %>
   <div class="my-3">
     <%= form.label :name, 'What for' %>

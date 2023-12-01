@@ -1,4 +1,4 @@
-<%= render 'layouts/header', msg: 'Add New Category', btn: 'Home' %>
+<%= render 'layouts/header', msg: 'Add New Category', btn: '<' %>
 <div class="form">
   <%= form_with(model: @category, url: user_categories_path(current_user), method: :post) do |form| %>
     <div class="my-3">
