@@ -3,12 +3,7 @@
   <%= render 'layouts/alert', msg: 'There is not any category yet.', class_name: 'primary' %>
 <% end %>
 
-<div class="text-end my-3">
-  <%= link_to 'Add new item', new_user_expense_path(current_user), class: 'btn btn-primary me-2' %>
-  <%= link_to 'Add new category', new_user_category_path(current_user), class: 'btn btn-primary' %>
-</div>
-
-<ul class="list-group">
+<ul class="list-group mb-auto">
   <% @categories.each do |item| %>
     <li class="list-group-item my-2 border">
       <div class="row align-items-center">
@@ -26,3 +21,6 @@
     </li>
   <% end %>
 </ul>
+<div class="mb-3 mt-auto">
+  <%= link_to 'Add new category', new_user_category_path(current_user), class: 'btn btn-secondary w-100' %>
+</div>
