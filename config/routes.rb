@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'expenses/create'
   get 'expenses/show'
   devise_for :users
-  root 'categories#index'
+  root 'splash#home'
   resources :users do
     resources :categories, only: [:index, :show, :new, :create]
     resources :expenses, only: [:new, :create]

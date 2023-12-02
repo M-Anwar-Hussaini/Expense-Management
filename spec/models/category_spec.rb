@@ -1,34 +1,24 @@
 require 'rails_helper'
 
 RSpec.describe Category, type: :model do
-  describe 'instances' do
-    let!(:user) do
-      User.create(
-        full_name: 'John Doe',
-        email: 'john@example.com',
-        password: 'password123'
-      )
-    end
+  it 'is not valid without icon' do
+    category = Category.new(name: 'Education')
+    expect(category).not_to be_valid
+  end
 
-    let!(:category) do
-      Category.create(
-        name: 'Groceries',
-        user:
-      )
-    end
+  it 'should not be valid without name and icon' do
+    category = Category.new
+    expect(category).not_to be_valid
+  end
 
-    it 'is valid with valid attributes' do
-      expect(category).to be_valid
-    end
+  it 'should not be valid with no user' do
+    category = Category.new(name: 'Education', icon: 'some icon')
+    expect(category).not_to be_valid
+  end
 
-    it 'has a name' do
-      expect(category.name).to eq('Groceries')
-    end
-
-    it 'belongs to a user' do
-      expect(category.user).to eq(user)
-    end
-
-    # Add other instance tests as needed
+  it 'should be valid with name, icon and user' do
+    user = User.new(full_name: 'User Account', email: 'user@gmail.com', password: 'Some password')
+    category = Category.create(name: 'Education', icon: 'some icon', user:)
+    expect(category).to be_valid
   end
 end

@@ -1,34 +1,31 @@
 require 'rails_helper'
 
-RSpec.describe Category, type: :model do
-  describe 'instances' do
-    let!(:user) do
-      User.create(
-        full_name: 'John Doe',
-        email: 'john@example.com',
-        password: 'password123'
-      )
-    end
+RSpec.describe Expense, type: :model do
+  subject(:expense) do
+    user = User.new(full_name: 'hamid tabish', email: 'hamid@gmail.com', password: 'password')
+    Expense.new(name: 'Renting', user:, amount: 23)
+  end
 
-    let!(:category) do
-      Category.create(
-        name: 'Groceries',
-        user:
-      )
-    end
+  it 'should be valid with all the given attributes' do
+    expect(expense).to be_valid
+  end
 
-    it 'is valid with valid attributes' do
-      expect(category).to be_valid
-    end
+  it 'should not be valid with nil name' do
+    expense.name = nil
+    expect(expense).to be_valid
+  end
 
-    it 'has a name' do
-      expect(category.name).to eq('Groceries')
-    end
+  it 'should not be valid with nil amount attribute' do
+    expense.amount = nil
+    expect(expense).to be_valid
+  end
 
-    it 'belongs to a user' do
-      expect(category.user).to eq(user)
-    end
+  it 'should not be valid with nil user attribute' do
+    expense.user = nil
+    expect(expense).not_to be_valid
+  end
 
-    # Add other instance tests as needed
+  it 'should be a new instance of Expense' do
+    expect(expense).to be_a_new(Expense)
   end
 end

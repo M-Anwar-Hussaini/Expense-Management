@@ -1,4 +1,4 @@
-<%= render 'layouts/header', msg: 'Add New Expense', btn: 'Home' %>
+<%= render 'layouts/header', msg: 'Add New Expense', btn: '<' %>
 <%= form_with(model: @expense, url: user_expenses_path(current_user), method: :post) do |form| %>
   <div class="my-3">
     <%= form.label :name, 'What for' %>
@@ -12,7 +12,7 @@
     <%= form.label :category, 'Category(Select one option)' %>
     <%= form.select :category, Category.all.map { |c| [c.name, c.id] }, {}, { class: 'form-control' } %>
   </div>
-  <div class="my-3">
-    <%= form.submit class: 'btn btn-success w-100' %>
+  <div class="btn-container mt-auto fixed-bottom">
+    <%= form.submit class: 'custom-btn' %>
   </div>
 <% end %>

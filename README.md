@@ -8,6 +8,7 @@
     - [Setup](#setup)
     - [Prerequisites](#prerequisites)
     - [Usage](#usage)
+- [Live Demo](#live-demo)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show Your Support](#support)
@@ -113,12 +114,22 @@ rails server
 
 Open your web browser and go to http://localhost:3000 to access the Blog App.
 
+## 🏃‍♂️ Live Demo <a name="live-demo"></a>
+- [Here](https://expense-manager-9ik5.onrender.com/) is the live demo and this is a short [video](https://drive.google.com/file/d/1ujLjxFWZZYfPt6XQlL1IfJm92uLCUPu7/view?usp=sharing) documentation.
+
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Mohammad Anwar Hussaini**
 
 - GitHub: [@M-Anwar-Hussaini](https://github.com/M-Anwar-Hussaini/)
 - LinkedIn: [Anwar Hussaini](https://www.linkedin.com/in/anwar-hussaini/)
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+**I would like to thank the following individuals and organizations for their contribution to this project.**
+
+- 🙏 [**Microvere**](https://www.microverse.org/?grsf=mohammad-a-nbtazu) for its arrangement and supports to all Micronauts and me.
+- 🙏 [**Gregoire Vella from Behance**](https://www.behance.net/gregoirevella) for providing the [template](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) for the capstone project.
 
 ## 🤝 Contributing <a name="contributing"></a>
 
