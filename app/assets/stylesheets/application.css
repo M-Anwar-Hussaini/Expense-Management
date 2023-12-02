@@ -23,3 +23,25 @@
   border: 1px solid #fff;
   padding: 12px;
 }
+
+.fixed-bottom {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.sign-in {
+  max-width: 570px;
+  width: 100%;
+  padding: 12px;
+  color: #aaadaf;
+  margin: 0 auto;
+}
+
+.log-in {
+  margin: 0 auto;
+  background-color: #3878c2;
+  color: #fff;
+  width: 100%;
+  padding: 12px;
+  max-width: 570px;
+}

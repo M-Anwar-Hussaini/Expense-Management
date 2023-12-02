@@ -1,5 +1,5 @@
 <%= render 'layouts/header', msg: 'Add New Category', btn: '<' %>
-<div class="form">
+<div class="form d-flex flex-column ">
   <%= form_with(model: @category, url: user_categories_path(current_user), method: :post) do |form| %>
     <div class="my-3">
       <%= form.label :name %>
@@ -9,7 +9,7 @@
       <%= form.label :icon, "Icon (paste the url of your icon)" %>
       <%= form.text_field :icon, class: 'form-control' %>
     </div>
-    <div class="my-3  btn-container">
+    <div class="my-3 mt-auto  btn-container fixed-bottom">
       <%= form.submit class: 'custom-btn' %>
     </div>
   <% end %>

@@ -1,7 +1,7 @@
-<div class="text-center pt-5">
+<div class="text-center pt-5 d-flex flex-column justify-content-center min-vh-100">
   <h1 class="fw-bold mb-5">Welcome to <br>Expense Management <br>Application</h1>
-  <div class="mt-auto">
-    <%= link_to 'Log in', new_user_session_path, class: 'btn btn-primary  my-2 w-50' %><br>
-    <%= link_to 'Sign up', new_registration_path(:user), class: 'btn btn-primary w-50 my-2' %>
+  <div class="mt-auto fixed-bottom">
+    <%= link_to 'Log in', new_user_session_path, class: 'log-in  d-block text-decoration-none rounded' %>
+    <%= link_to 'Sign up', new_registration_path(:user), class: 'sign-in d-block text-decoration-none rounded' %>
   </div>
 </div>
